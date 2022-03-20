@@ -1,6 +1,5 @@
 #ifndef SORT_HPP_
 #define SORT_HPP_
-
 #include <algorithm>
 
 void SelectionSort(int * const arr, const std::size_t size);

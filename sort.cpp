@@ -2,7 +2,8 @@
 
 namespace 
 {
-    int BinarySearchIndex(const int * const arr, const int value, int from, int to){
+    int BinarySearchIndex(const int * const arr, const int value, int from, int to)
+    {
         if (from >= to) return (arr[to] < value) ? to + 1 : to;
         int mid = (from + to) / 2;
         if (arr[mid] == value) return mid;
@@ -11,7 +12,8 @@ namespace
     }
 }
 
-void SelectionSort(int * const arr, const std::size_t size){
+void SelectionSort(int * const arr, const std::size_t size)
+{
     for (unsigned int i(0); i < size; ++i){
         for (unsigned int j(i); j < size; ++j){
             if (arr[i] > arr[j])
@@ -20,7 +22,8 @@ void SelectionSort(int * const arr, const std::size_t size){
     }
 }
 
-void BubbleSort(int * const arr, const std::size_t size){
+void BubbleSort(int * const arr, const std::size_t size)
+{
     for (unsigned int i(1); i < size; ++i){
         for (unsigned int j(0); j < size - 1; ++j){
             if(arr[j] > arr[j+1])
@@ -29,7 +32,8 @@ void BubbleSort(int * const arr, const std::size_t size){
     }
 }
 
-void InsertionSort(int * const arr, const std::size_t size){
+void InsertionSort(int * const arr, const std::size_t size)
+{
     for (unsigned int i(0); i < size; ++i){
         int j = i;
         while(j > 0){
@@ -40,7 +44,8 @@ void InsertionSort(int * const arr, const std::size_t size){
     }
 }
 
-void BinaryInsertionSort(int * const arr, const std::size_t size){
+void BinaryInsertionSort(int * const arr, const std::size_t size)
+{
     for (unsigned int i(0); i < size; ++i){
         int val = arr[i];
         int index = BinarySearchIndex(arr, val, 0, i);
