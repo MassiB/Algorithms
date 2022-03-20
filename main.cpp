@@ -22,9 +22,7 @@ int main()
     const std::size_t size = 10;
     int *arr = GenerateData(size);
     print(arr,size);
-    
     BinaryInsertionSort(arr, size);
-    
     print(arr,size); 
     delete[] arr;
 

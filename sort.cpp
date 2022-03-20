@@ -52,7 +52,3 @@ void BinaryInsertionSort(int * const arr, const std::size_t size){
         }
     }
 }
-
-void MergeSort(int * const arr, const std::size_t size){
-    
-}
